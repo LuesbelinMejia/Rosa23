@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 2em;
+    background: #212121;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    /* Establece el ancho máximo del contenido */
+    margin: 0 auto;
+    /* Centra el contenido en la página */
+    padding: 20px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Crea columnas automáticas con un ancho mínimo de 300px */
+    gap: 20px;
+    /* Espacio entre los elementos de la cuadrícula */
+}
+
+article,
+aside {
+    border: 1px solid #ccc;
+    /* Añade un borde a los elementos article y aside */
+    padding: 10px;
+    /* Añade relleno */
+    display: flex;
+    /* Establece el contenido como flexbox */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    justify-content: center;
+    /* Centra verticalmente los elementos */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Cambia a una sola columna en pantallas pequeñas */
+    }
+}
+
+h1 {
+    color: #f60;
+    text-align: center;
+    margin: 0.25em auto;
+    font-size: 2em;
+}
+
+header,
+nav {
+    background-color: #ed4c62;
+    border-radius: .5em;
+    margin: 0.5em auto;
+    padding: 0.25em;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+footer {
+    background-color: #ed4c62;
+    border-radius: .5em;
+    margin: 0.5em auto;
+    padding: 0.25em;
+    text-align: center;
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos del menú */
+ul {
+    display: flex;
+    justify-content: center;
+    /* Centra los elementos en el contenedor */
+    background-color: #333;
+    /* Color de fondo del menú */
+}
+
+li {
+    margin: 0 10px;
+    /* Espacio entre elementos del menú */
+}
+
+a {
+    color: #fff;
+    /* Color del texto del menú */
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    padding: 10px 20px;
+    /* Espacio alrededor del texto del enlace */
+    border-radius: 5px;
+
+    /* Borde redondeado */
+}
+
+a:hover {
+    background-color: #555;
+    /* Cambia el color de fondo al pasar el ratón */
+}

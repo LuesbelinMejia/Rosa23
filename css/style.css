@@ -122,8 +122,13 @@ body {
 
 .description {
     font-size: 1.5rem;
+    /* Establece un tamaño de fuente base */
     margin-bottom: 20px;
+    text-align: center;
+    width: 350px;
 }
+
+
 
 .button a {
     text-decoration: none;
