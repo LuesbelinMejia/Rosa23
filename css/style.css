@@ -47,6 +47,44 @@ body {
     animation: glow 2.5s ease-in-out infinite;
 }
 
+@media screen and (max-width: 574px) {
+    .botones {
+        display: block;
+        /* Cambia el botón a un bloque para ocupar todo el ancho disponible */
+        width: calc(100% - 20px);
+        /* Ocupa todo el ancho del contenedor padre menos un margen de 10px en cada lado */
+        text-align: center;
+        /* Centra el botón en pantallas pequeñas */
+        margin: 0 auto;
+        /* Añade un margen horizontal automático para centrar el botón */
+    }
+
+    .botones a {
+        display: block;
+        /* Cambia el enlace a un bloque para ocupar todo el ancho disponible */
+        width: 100%;
+        /* Ocupa todo el ancho del contenedor padre */
+        margin-right: 10px;
+        /* Agrega un margen derecho para separar los botones */
+        margin-bottom: 10px;
+        /* Agrega un margen inferior para separar los botones */
+    }
+
+    .greetings {
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 2rem;
+    }
+
+    .button a {
+        font-size: 1rem;
+    }
+}
+
 @keyframes glow {
 
     0%,
