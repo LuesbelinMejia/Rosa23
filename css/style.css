@@ -167,6 +167,7 @@ i {
 
     .credits {
         width: 100%;
+        margin-left: 5%;
         text-align: center;
         margin-top: 50px;
     }
