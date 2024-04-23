@@ -146,7 +146,6 @@ body {
 
     .description {
         font-size: 2rem;
-        text-align: center;
     }
 
     .button a {
@@ -167,10 +166,9 @@ i {
 }
 
 @media screen and (max-width:574px) {
-
-
     .credits {
         width: 80%;
+        margin-left: 10%;
         text-align: center;
         margin-top: 50px;
     }
